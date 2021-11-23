@@ -21,7 +21,7 @@
         <a href="./" class="logo-link">Web<span class="studio-top">Studio</span>
         </a>
       <ul class="site-nav">
-        <li class="site-nav-item"><a href="index.html" class="site-nav-link current">Студия</a></li>
+        <li class="site-nav-item"><a href="index.html" class="site-nav-link current current-decor">Студия</a></li>
         <li class="site-nav-item"><a href="portfolio.html" target="_self" class="site-nav-link">Портфолио</a></li>
         <li class="site-nav-item"><a href="" class="site-nav-link">Контакты</a></li>
       </ul>
@@ -48,7 +48,7 @@
     <section class="hero overlay">
       <div class="container">
       <h1 class="tagline">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-      <button type="button" class="button">Заказать услугу</button>
+      <button type="button" class="button" data-modal-open>Заказать услугу</button>
       </div>
     </section>
     <!-- Преимущества -->
@@ -81,12 +81,15 @@
             <ul class="section-list-images">
               <li class="section-item">
                 <img src="./images/img.jpg" width="370" alt="keyboard">
+                <div class="product-overlay">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</div>
               </li>
              <li class="section-item">
                <img src="./images/img(1).jpg" width="370" alt="notebook">
+              <div class="product-overlay">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</div>
              </li>
              <li class="section-item">
                <img src="./images/img(2).jpg" width="370" alt="ipad">
+              <div class="product-overlay">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</div>
              </li>
           </ul>
         </div>
@@ -332,5 +335,12 @@
       </div>
       </div>  
   </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <div class="close" data-modal-close>
+      </div>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 </html>
