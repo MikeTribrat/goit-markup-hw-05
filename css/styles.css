@@ -528,9 +528,7 @@ ul {
 .social-links {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-left: 32px;
-  margin-right: 32px;
+  justify-content: center;
   margin-top: 16px;
 }
 
