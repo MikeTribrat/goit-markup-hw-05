@@ -124,6 +124,9 @@ ul {
 /* site-nav */
 
 .current-decor::after {
+  position: absolute;
+  bottom: 0;
+
   content: '';
   display: block;
   width: 100%;
@@ -168,6 +171,7 @@ ul {
 }
 
 .current {
+  position: relative;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -380,7 +384,7 @@ ul {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
+  bottom: 0;
   left: 0;
   pointer-events: none;
 
@@ -742,6 +746,7 @@ ul {
 
 .gallery-image-overlay {
   position: relative;
+  overflow: hidden;
 }
 
 .gallery-item:hover .gallery-overlay,
