@@ -525,6 +525,14 @@ ul {
   color: var(--secodary-text-color);
 }
 
+.team-list {
+  margin-right: 10px;
+}
+
+.team-list:last-child {
+  margin-right: 0px;
+}
+
 .social-links {
   display: flex;
   align-items: center;
