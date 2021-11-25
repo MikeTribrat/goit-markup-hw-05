@@ -573,6 +573,8 @@ ul {
   align-items: center;
   justify-content: center;
   fill: var(--fifth-bg-color);
+  background-color: var(--primary-bg-color);
+  border-radius: 50%;
 
   transition-property: background-color;
   transition-duration: var(--transition-duration);
