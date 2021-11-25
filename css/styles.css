@@ -759,6 +759,12 @@ ul {
 
 .gallery-item:hover .gallery-overlay,
 .gallery-item:focus .gallery-overlay {
+  transition: transform var(--transition-duration) var(--animation-timing),
+    opacity var(--transition-duration) var(--animation-timing);
+}
+
+.gallery-item:hover .gallery-overlay,
+.gallery-item:focus .gallery-overlay {
   transform: translateY(0);
   opacity: 1;
 }
