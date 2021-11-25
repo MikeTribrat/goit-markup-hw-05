@@ -134,6 +134,8 @@ ul {
 
   background: var(--bg-color-effect);
   border-radius: 2px;
+
+  transition: width var(--transition-duration) var(--animation-timing);
 }
 
 .site-nav {
@@ -142,7 +144,29 @@ ul {
 }
 
 .site-nav-item {
+  position: relative;
   margin-right: 50px;
+}
+
+.site-nav-item::after {
+  position: absolute;
+  bottom: 0;
+
+  content: '';
+  display: block;
+  width: 0%;
+  height: 4px;
+
+  background: var(--bg-color-effect);
+  border-radius: 2px;
+
+  transition: width var(--transition-duration) var(--animation-timing);
+}
+
+.site-nav-item:hover::after,
+.site-nav-item:focus::after {
+  width: 100%;
+  transition: width var(--transition-duration) var(--animation-timing);
 }
 
 .site-nav-item:last-child {
