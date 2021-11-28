@@ -576,9 +576,8 @@ ul {
   background-color: var(--primary-bg-color);
   border-radius: 50%;
 
-  transition-property: background-color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--animation-timing);
+  transition: background-color var(--transition-duration) var(--animation-timing),
+    fill var(--transition-duration) var(--animation-timing);
 }
 
 .personal-links:hover,
@@ -632,7 +631,7 @@ ul {
   border-radius: 4px;
   color: var(--fifth-bg-color);
 
-  transition: color var(--transition-duration) var(--animation-timing),
+  transition: border var(--transition-duration) var(--animation-timing),
     fill var(--transition-duration) var(--animation-timing);
 }
 
